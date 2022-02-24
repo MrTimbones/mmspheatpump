@@ -142,6 +142,7 @@
                     <span class="bluenav duration" title="One week" duration='168'>w</span>
                     <span class="bluenav duration" duration='24'>24h</span>
                     <span class="bluenav duration" title="Today" duration='tdy'>tdy</span>
+                    <span class="bluenav duration" duration='6'>6h</span>
                     <span class="bluenav duration" duration='3'>3h</span>
                     <span class="bluenav duration" duration='1'>1h</span>
                     <span class="bluenav duration" duration='0.166'>10m</span>
