@@ -73,7 +73,7 @@ async function updater() {
     if (view.end == 0) {
         // Assign a default view window
         view.end = newestFeedTime * 1000;
-        view.start = view.end - 3600 * 1000;
+        view.start = view.end - 6 * 3600 * 1000;
     }
 
     if (autoUpdate) {
