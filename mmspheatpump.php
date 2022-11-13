@@ -8,6 +8,7 @@
 <link href="<?php echo $path; ?>Modules/app/Views/css/light.css?v=<?php echo $v; ?>" rel="stylesheet">
 
 <script type="text/javascript" src="<?php echo $path; ?>Modules/app/Lib/config.js?v=<?php echo $v; ?>"></script>
+<script type="text/javascript" src="<?php echo $path; ?>Modules/app/Lib/appconf.js?v=<?php echo $v; ?>"></script>
 <script type="text/javascript" src="<?php echo $path; ?>Lib/moment.min.js"></script>
 <script type="text/javascript" src="<?php echo $path; ?>Lib/flot/jquery.flot.min.js?v=<?php echo $v; ?>"></script>
 <script type="text/javascript" src="<?php echo $path; ?>Lib/flot/jquery.flot.resize.min.js?v=<?php echo $v; ?>"></script>
@@ -192,7 +193,7 @@
 
 
                 <div class="section-heading">Pumps</div>
-
+                <span data-active-input-config-keys="WaterPump1Status,WaterPump2Status,WaterPump4Status"></span>
                 <div data-config-keys="OperationMode,WaterPump1Status,WaterPump2Status,WaterPump4Status" class="chart"></div>
 
             </div>
