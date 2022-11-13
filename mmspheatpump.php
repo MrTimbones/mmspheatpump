@@ -167,7 +167,7 @@
                     <span data-hide-consumption="1" data-input-config-key="TotalEnergyConsumed1" data-output-config-key="TotalEnergyProduced1"></span>
                 </div>
 
-                <div data-config-keys="Space Heating CoP,Hot Water CoP,Nominal CoP@Design,Nominal CoP@Flow" class="chart"></div>
+                <div data-config-keys="Space Heating CoP,Hot Water CoP,Nominal CoP@Design,Nominal CoP@Flow" class="chart" style="min-height: 100px; height: 100px"></div>
 
 
                 <div class="section-heading">
@@ -178,7 +178,7 @@
                     <span class="energy-summary" data-input-config-key="HeatingEnergyConsumed1" data-output-config-key="HeatingEnergyProduced1">
                 </div>
 
-                <div data-label="Temperature" data-config-keys="FlowTemperature,ReturnTemperature,OutdoorTemperature,RoomTemperatureZone1,EffectiveTemperature,OutdoorDewPoint,TargetHCTemperatureZone1" class="chart"></div>
+                <div data-label="Temperature" data-config-keys="FlowTemperature,ReturnTemperature,OutdoorTemperature,RoomTemperatureZone1,EffectiveTemperature,OutdoorDewPoint,TargetHCTemperatureZone1" class="chart" style="height: 400px"></div>
 
 
                 <div class="section-heading">
@@ -194,7 +194,7 @@
 
                 <div class="section-heading">Pumps</div>
                 <span data-active-input-config-keys="WaterPump1Status,WaterPump2Status,WaterPump4Status"></span>
-                <div data-config-keys="OperationMode,WaterPump1Status,WaterPump2Status,WaterPump4Status" class="chart"></div>
+                <div data-config-keys="OperationMode,WaterPump1Status,WaterPump2Status,WaterPump4Status" class="chart" style="min-height: 100px; height: 100px"></div>
 
             </div>
         </div>
