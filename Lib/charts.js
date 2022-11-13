@@ -40,18 +40,18 @@ function createCoPFeed(inputFeedHistory, outputFeedHistory) {
             if (outputFeedHistory[index][1] == 0) return null;
         }
 
-        const cohortSize = Math.min(index, 3)
+        const cohortSize = Math.min(index, 1)
 
-        const inputCohortValues = array.slice(index - cohortSize, index + cohortSize + 1).map(([_, value]) => value)
+        const inputCohortValues = array.slice(index - cohortSize, index + cohortSize).map(([_, value]) => value)
         const inputCohortSum = sum(inputCohortValues)
 
         if (inputCohortSum == 0) return null;
 
 
-        const outputCohortValues = outputFeedHistory.slice(index - cohortSize, index + cohortSize + 1).map(([_, value]) => value)
+        const outputCohortValues = outputFeedHistory.slice(index - cohortSize, index + cohortSize).map(([_, value]) => value)
 
         const constrainedOutputCohortValues = outputCohortValues.map((value, index) => {
-            const upperLimit = 7 * inputCohortValues[index]
+            const upperLimit = 7.5 * inputCohortValues[index]
             return Math.min(upperLimit, value)
         })
 
