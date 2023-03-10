@@ -175,7 +175,7 @@ async function loadDataAndRenderCharts(forceRefresh) {
 
     // Fetch the feed history
 
-    const efficiencyPromise = fetch(applicationURL + "config/interpolated_efficiencies.json")
+    const efficiencyPromise = fetch(applicationURL + "config/interpolated_efficiencies_11kW.json")
 
     await Promise.all(Object.keys(config.app).map(async configKey => {
         if (feedsByConfigKey[configKey]) {
